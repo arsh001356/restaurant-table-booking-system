@@ -22,7 +22,7 @@ function Navbar() {
                         <li className=" cursor-pointer  "><Link to="/">HOME</Link></li>
                         <li className=" cursor-pointer "><Link to="/menu">MENU</Link></li>
                         <li className=" cursor-pointer "><Link to="/about">ABOUT</Link></li>
-                        <li className=" cursor-pointer ">BOOK TABLE</li>
+                        <li className=" cursor-pointer "><Link to="/bookTable">BOOK TABLE</Link></li>
 
                     </ul>
 
