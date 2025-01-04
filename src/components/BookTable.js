@@ -32,7 +32,7 @@ const BookTable = () => {
         if (!validateForm()) return;
 
         try {
-            const response = await fetch('https://restaurant-table-booking-system-xi.vercel.app/api/availability', {
+            const response = await fetch('https://restaurant-table-booking-system-apii.vercel.app/api/availability', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ date: bookingData.date }),
