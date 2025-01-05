@@ -8,7 +8,10 @@ const port = 5000;
 let bookings = [];
 
 // Enable CORS
-app.use(cors();
+app.use(cors({
+    origin: 'https://restaurant-table-booking-system-sepia.vercel.app', // Allow your frontend domain
+    methods: ['GET', 'POST'], // Specify allowed methods
+}));
 app.use(bodyParser.json());
 
 // Get available times based on date
