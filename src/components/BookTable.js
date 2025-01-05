@@ -32,7 +32,7 @@ const BookTable = () => {
         if (!validateForm()) return;
 
         try {
-            const response = await fetch('https://restaurant-table-booking-system-api.onrender.com/api/availability', {
+            const response = await fetch('https://restaurant-table-booking-system-8htb.onrender.com//api/availability', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ date: bookingData.date }),
@@ -58,7 +58,7 @@ const BookTable = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/api/bookings', {
+            const response = await fetch('https://restaurant-table-booking-system-8htb.onrender.com//api/bookings', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(bookingData),
